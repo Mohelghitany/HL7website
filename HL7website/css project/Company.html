@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="auther" content="Team 2" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="container">
+        <header class="jumbotron subhead" id="overview">
+            <p class="lead"> HL7 for Company </p>
+            <h1>Health level seven</h1>
+        </header>
+        <div class="masthead">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <ul class="nav">
+
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                            <li><a href="css.html">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row-fluid">
+            <div class="span3 bs-docs-sidebar" id="navparent">
+                <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200"
+                    data-offset-bottom="260">
+                    <li><a href="#statemet"> What is HL7 </a></li>
+                    <li><a href="#nano"> HL7 version </a></li>
+                    <li><a class="subhead" href="#V2"> HL7 V2 </a></li>
+                    <li><a class="subhead" href="#V3"> HL7 V3 </a></li>
+                    <li><a class="subhead" href="#fhir"> FHIR </a></li>
+                    <li><a href="#mess">HL7 messages</a></li>
+                    <li><a class="subhead" href="#V2Dis"> V2 </a></li>
+                    <li><a class="subhead" href="#V3Dis"> V3 </a></li>
+
+                </ul>
+            </div>
+            <div class="span8 offset1">
+                <section id="statemet">
+                    <div class="page-header">
+                        <h3>What is HL7?</h3>
+                        <hr>
+                        <p>Health Level Seven (HL7) is a set of standards that incorporate file-based transactions and
+                            the newer XML-based Fast Healthcare Interoperability Resources (FHIR) protocols to establish
+                            methods to exchange electronic health information. These standards create rules for how to
+                            structure data and allow for a seamless flow of information between systems. Healthcare
+                            organizations who openly adopt standards like HL7 have the tools required to make important
+                            operational content like patient data and staff scheduling content available to one another
+                            to enable automation and more efficient workflows in multi-application environments. HL7
+                            standards don"’"t regulate how to build healthcare systems or applications, but provide a
+                            guide for how clinical information should be compiled. According to HL7 international, the
+                            standards are recognized as the most commonly used in the world.
+                            The HL7 standards in healthcare have similarities to the Dewey Decimal system in libraries.
+                            Librarians follow rules for how each nonfiction title should be described and categorized in
+                            a consistent structure following accepted rules. Readers who want to find a specific title
+                            can learn how to retrieve the title, regardless of which library they are in. Many other
+                            industries have similar standards, often accredited by the American National Standards
+                            Institute (ANSI).
+                        </p>
+                    </div>
+                </section>
+                <section id="nano">
+                    <div class="page-header">
+                        <h3>HL7 version </h3>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <section id="V2">
+                                <h4>HL7 V2</h4>
+                                <br />
+                                <p>
+                                    The HL7 V2 standard was created mostly by clinical interface specialists and was
+                                    designed to provide a framework in which data could be exchanged between disparate
+                                    clinical systems.
+
+                                    The V2 standard provides 80 percent of the interface framework, plus the ability to
+                                    negotiate the remaining 20 percent of needs on an interface-by-interface basis. The
+                                    standard achieves this goal by:
+                                <ul>
+                                    <li>Defining HL7 encoding rules, groupings, cardinality, and the default character
+                                        set (i.e. ASCII).</li>
+                                    <li>Providing support for local variations in data interchanges by allowing optional
+                                        fields, additional messages, or additional portions of messages.</li>
+                                    <li>Evolving and adapting to changes required in local implementations, or to issues
+                                        discovered via real-world usage of the standard.</li>
+                                    <li>Supporting batch processing of message file transfers.</li>
+                                    <li>Considering the relationship between the HL7 standard protocol with other
+                                        protocols, such as lower layer protocols (i.e. avoiding replication of
+                                        features), applications protocols (notably DICOM and X12, and protocols
+                                        published by ASTM and IEEE), and other proprietary healthcare protocols.</li>
+
+                                </ul>
+                                </p>
+                                <p>
+                                    Generally, all 2.X versions are backward-compatible with earlier versions because
+                                    the V2 standard allows applications to ignore message elements they do not expect.
+                                    This means that an older application can receive and process messages from newer
+                                    applications using newer HL7 versions "-" i.e., messages containing more segments
+                                    and/or fields "-" without producing an error.
+                                </p>
+                            </section>
+                            <hr>
+                            <section id="V3">
+                                <h4>HL7 V3</h4>
+                                <br />
+                                <p>
+                                    The HL7 V3 standard was first released in late 2005, and was strongly influenced by
+                                    the government and medical information users rather than clinical interface
+                                    specialists. The V3 version is not backwards compatible with V2 versions of the
+                                    standard, so existing V2 interfaces will not (without considerable modification) be
+                                    able to communicate with interfaces using V3.
+
+                                    HL7 V3 was created to address some specific challenges identified in the HL7 V2
+                                    standard, including:
+                                <ul>
+                                    <li>An implied, rather than consistent, data model.</li>
+                                    <li>An absence of formal methodologies with data modeling, creating inconsistencies
+                                        and difficulties in understanding.</li>
+                                    <li>A lack of well-defined roles for applications and messages used in different
+                                        clinical functions.</li>
+                                    <li>Too much flexibility and not enough of a full solution.</li>
+                                </ul>
+                                </p>
+                                <p>
+                                    The goals of HL7 V3 were to increase worldwide adoption of the standard, define a
+                                    consistent data model, create a more precise and less vague standard, and create an
+                                    entirely new standard that would not be hindered by legacy issues. The decision to
+                                    make HL7 V3 a new standard (and incompatible with older and more widely implemented
+                                    V2 versions) means that it is has not been widely adopted thus far.
+
+                                    To adopt HL7 V3, users would need to create and maintain HL7 V2-based interfaces
+                                    with HL7 V2-based applications, while deploying new V3-based applications and
+                                    implementing interfaces between them. For this reason, HL7 V3 has been adopted
+                                    primarily for use in applications without legacy communication requirements, without
+                                    historical use of HL7 V2 in communications, or in regions/locations that have high
+                                    government enforcement of HL7 V3 usage.
+                                </p>
+                            </section>
+                            <hr>
+                            <section id="fhir">
+                                <h4>FHIR</h4>
+                                <br />
+
+                                <p>
+                                    In 2014, HL7 introduced an important alternative to HL7 V2 and V3 standards: the
+                                    Fast Healthcare Interoperability Resources (FHIR) standard. FHIR, which was first
+                                    drafted in 2011, is an open standard that enables new apps and legacy systems to
+                                    more easily exchange data than in the past. FHIR was developed to not only improve
+                                    interoperability and enhance efficiency of communication but also streamline
+                                    implementation compared with previous standards, providing easily understood
+                                    specifications and enabling developers to capitalize on common Web technologies.
+
+                                    FHIR builds on previous standards, including HL7 V2, HL7 V3, and CDA (Clinical
+                                    Document Architecture—part of HL7 V3). But unlike those other standards, FHIR
+                                    employs RESTful web services and open web technologies, including not only XML (used
+                                    by previous standards) but also JSON and RDF data formats. These technologies should
+                                    be familiar to most developers, reducing the learning curve compared with other
+                                    standard.
+                                </p>
+                                <p>
+                                    FHIR also offers multiple options for exchanging data among systems. For example, it
+                                    supports messaging (similar to HL7 V2), documents (like CDA), as well as a RESTful
+                                    API approach. The RESTful API approach can simplify data sharing and reduce the time
+                                    to onboard new data exchange partners by replacing point-to-point interfaces with
+                                    one-to-many interfaces. This approach offers the potential for greater
+                                    interoperability among a wide array of systems and devices—including not only
+                                    electronic health record (EHR) systems but also mobile apps, mobile devices, medical
+                                    devices, and wearables.
+
+                                    FHIR defines the meaningful pieces of data that are stored or exchanged as
+                                    “resources” (which are somewhat similar to “segments” within HL7 V2 messages). A
+                                    resource can include metadata, text, or bundled collections of information that form
+                                    clinical documents. Each resource has a unique identifying tag, just like a web page
+                                    URL. That tag makes it easy for devices and applications to access required data
+                                    without complicated data exchange processes. The RESTful API approach also enables
+                                    resources to be updated and delete.
+                                </p>
+                                <p>
+                                    FHIR is inherently suited for mobile apps. With FHIR, APIs can access required data
+                                    from multiple systems and provide that data in formats that developers can easily
+                                    integrate into their mobile apps. And with FHIR, that data can be shared rapidly
+                                    (which is critical for mobile apps) since only the requested data is transmitted.
+
+                                    There has been clear momentum for using FHIR for mobile healthcare apps. In 2014,
+                                    the SMART (Substitutable Medical Apps, Reusable Technologies) Health IT project
+                                    created the SMART on FHIR API to enable developers to write an app once and run it
+                                    anywhere in the healthcare system. And in 2018, Apple created a FHIR-based health
+                                    records feature for its iOS operating system, giving users simple access to a range
+                                    of healthcare information from hundreds of participating providers.
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section id="mess">
+                    <div class="page-header">
+                        <h3>HL7 Messages</h3>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <section id="V2Dis">
+                                <h4>V2</h4>
+                                <br />
+                                <p>
+                                    HL7 v2.x messages use a non-XML encoding syntax based on segments (lines) and
+                                    one-character delimiters.[5] Segments have composites (fields) separated by the
+                                    composite delimiter. A composite can have sub-composites (components) separated by
+                                    the sub-composite delimiter, and sub-composites can have sub-sub-composites
+                                    (subcomponents) separated by the sub-sub-composite delimiter. The default delimiters
+                                    are carriage return for the segment separator, vertical bar or pipe (|) for the
+                                    field separator, caret (^) for the component separator, ampersand (&) for the
+                                    subcomponent separator, and number sign (#) for the default truncation separator.
+                                    The tilde (~) is the default repetition separator. Each segment starts with a
+                                    3-character string that identifies the segment type. Each segment of the message
+                                    contains one specific category of information. Every message has MSH as its first
+                                    segment, which includes a field that identifies the message type. The message type
+                                    determines the expected segment types in the message.[6] The segment types used in a
+                                    particular message type are specified by the segment grammar notation used in the
+                                    HL7 standards.
+
+                                    The following is an example of an admission message. MSH is the header segment, PID
+                                    the Patient Identity, PV1 is the Patient Visit information, etc. The 5th field in
+                                    the PID segment is the patient's name, in the order, family name, given name, second
+                                    name (or their initials), suffix, etc. Depending on the HL7 V2.x standard version,
+                                    more fields are available in the segment for additional patient information.
+                                </p>
+                                <p style="color:red;">
+                                    MSH|^~\&|MegaReg|XYZHospC|SuperOE|XYZImgCtr|20060529090131-0500||ADT^A01^ADT_A01|01052901|P|2.5
+                                    EVN||200605290901||||
+                                    PID|||56782445^^^UAReg^PI||KLEINSAMPLE^BARRY^Q^JR||19620910|M||2028-9^^HL70005^RA99113^^XYZ|260
+                                    GOODWIN CREST DRIVE^^BIRMINGHAM^AL^35209^^M~NICKELL’S PICKLES^10000 W 100TH
+                                    AVE^BIRMINGHAM^AL^35200^^O|||||||0105I30001^^^99DEF^AN
+                                    PV1||I|W^389^1^UABH^^^^3||||12345^MORGAN^REX^J^^^MD^0010^UA
+                                    MC^L||67890^GRAINGER^LUCY^X^^^MD^0010^UAMC^L|MED|||||A0||13579^POTTER^SHERMAN^T^^^MD^0010^UAMC^L|||||||||||||||||||||||||||200605290900
+                                    OBX|1|NM|^Body Height||1.80|m^Meter^ISO+|||||F
+                                    OBX|2|NM|^Body Weight||79|kg^Kilogram^ISO+|||||F
+                                    AL1|1||^ASPIRIN
+                                    DG1|1||786.50^CHEST PAIN, UNSPECIFIED^I9|||A
+                                </p>
+                                <P>
+                                    HL7 v2.x has allowed for the interoperability between electronic Patient
+                                    Administration Systems (PAS), Electronic Practice Management (EPM) systems,
+                                    Laboratory Information Systems (LIS), Dietary, Pharmacy and Billing systems as well
+                                    as Electronic Medical Record (EMR) or Electronic Health Record (EHR) systems.
+                                    Currently, the HL7 v2.x messaging standard is supported by every major medical
+                                    information systems vendor in the United States.
+                                </P>
+                            </section>
+                            <hr>
+                            <section id="V3Dis">
+                                <h4>V3</h4>
+                                <br />
+                                <p>
+                                    The HL7 version 3 messaging standard defines a series of Secure Text messages
+                                    (called interactions) to support all healthcare workflows.
+
+                                    HL7 v3 messages are based on an XML encoding syntax, as shown in this example:
+                                </p>
+                                <p style="color:red;" style="font-family:courier;">
+                                    &lt; POLB_IN224200 ITSVersion="XML_1.0" xmlns="urn:hl7-org:v3"
+                                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><br>
+                                    &lt;id root="2.16.840.1.113883.19.1122.7" extension="CNTRL-3456" /><br>
+                                    &lt;creationTime value="200202150930-0400" /><br>
+                                    <!-- The version of the datatypes/RIM/vocabulary used is that of May 2006 -->
+                                    &lt;versionCode code="2006-05" /><br>
+                                    <!-- interaction id= Observation Event Complete, w/o Receiver Responsibilities -->
+                                    &lt;interactionId root="2.16.840.1.113883.1.6" extension="POLB_IN224200" /><br>
+                                    &lt;processingCode code="P" /><br>
+                                    &lt;processingModeCode nullFlavor="OTH" /><br>
+                                    &lt;acceptAckCode code="ER" /><br>
+                                    &lt;receiver typeCode="RCV"><br. &lt;device classCode="DEV"
+                                        determinerCode="INSTANCE"><br>
+                                        &lt;id extension="GHH LAB" root="2.16.840.1.113883.19.1122.1" /><br>
+                                        &lt;asLocatedEntity classCode="LOCE"><br>
+                                        &lt;location classCode="PLC" determinerCode="INSTANCE"><br>
+                                        &lt;id root="2.16.840.1.113883.19.1122.2" extension="ELAB-3" /><br>
+                                        &lt;/location><br>
+                                        &lt;/asLocatedEntity><br>
+                                        &lt;/device><br>
+                                        &lt;/receiver><br>
+                                        &lt;sender typeCode="SND"><br>
+                                        &lt;device classCode="DEV" determinerCode="INSTANCE"><br>
+                                        &lt;id root="2.16.840.1.113883.19.1122.1" extension="GHH OE" /><br>
+                                        &lt;asLocatedEntity classCode="LOCE"><br>
+                                        &lt;location classCode="PLC" determinerCode="INSTANCE"><br>
+                                        &lt;id root="2.16.840.1.113883.19.1122.2" extension="BLDG24" /><br>
+                                        &lt;/location><br>
+                                        &lt;/asLocatedEntity><br>
+                                        &lt;/device><br>
+                                        &lt;/sender><br>
+                                        <!-- Trigger Event Control Act & Domain Content -->
+                                        &lt;/POLB_IN224200><br>
+                                </p>
+                            </section>
+                            <hr>
+
+                        </div>
+                    </div>
+                </section>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row-fluid">
+
+                <ul>
+                    <li>Mohamed Elghitany</li>
+                    <li>Ammar Yasser </li>
+                    <li>Bahey Ismail</li>
+                    <li>Ahmed Tarek</li>
+                    <li>Rawan Abdelnasser</li>
+                    <li>Youssef Gamal</li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(document.body).scrollspy({
+                target: "#navparent"
+            });
+        });
+
+    </script>
+</body>
+
+</html>
